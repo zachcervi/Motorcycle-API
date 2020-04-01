@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Rev.Models
@@ -16,6 +17,7 @@ namespace Rev.Models
         public float Price { get; set; }
         public bool IsNew { get; set; }
         public int TypeId { get; set; }
-        public Type Type { get; set; }
+        [JsonIgnore]
+        public VehicleType Type { get; set; }
     }
 }

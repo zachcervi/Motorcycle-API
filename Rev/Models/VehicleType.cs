@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Rev.Models
 {
-    public class Type
+    public class VehicleType
     {
         public int Id { get; set; }
         public string Name { get; set; }
