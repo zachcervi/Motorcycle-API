@@ -7,7 +7,9 @@ namespace Rev.Classes
 {
     public class VehicleQueryParameters :QueryParameters
     {
-        public string Sku { get; set; }
-        public string Name { get; set; }
+        public string Make { get; set; }
+        public string  Model { get; set; }
+        public string  Year { get; set; }
+
     }
 }

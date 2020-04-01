@@ -10,10 +10,10 @@ namespace Rev.Models
     {
         public static void Seed(this ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Type>().HasData(
-                new Type { Id = 1, Name = "ATV" },
-                new Type { Id = 2, Name = "Dirt Bike" },
-                new Type { Id = 3, Name = "Street" }
+            modelBuilder.Entity<VehicleType>().HasData(
+                new VehicleType { Id = 1, Name = "ATV" },
+                new VehicleType { Id = 2, Name = "Dirt Bike" },
+                new VehicleType { Id = 3, Name = "Street" }
                 );
 
             modelBuilder.Entity<Vehicle>().HasData(

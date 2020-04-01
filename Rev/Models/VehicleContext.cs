@@ -15,12 +15,12 @@ namespace Rev.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Type>().HasMany(v => v.Vehicles).WithOne(a => a.Type).HasForeignKey(a => a.TypeId);
+            modelBuilder.Entity<VehicleType>().HasMany(v => v.Vehicles).WithOne(a => a.Type).HasForeignKey(a => a.TypeId);
             modelBuilder.Seed();
         }
 
         public DbSet<Vehicle> Vehicles { get; set; }
-        public DbSet<Type> Types { get; set; }
+        public DbSet<VehicleType> Types { get; set; }
     }
 }
 
